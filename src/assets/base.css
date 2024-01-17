@@ -84,3 +84,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.row {
+  width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 20px auto;
+  margin-bottom: 30px;
+}
+
+.row-title {
+  font-weight: 200;
+  text-align: center;
+  user-select: none;
+}

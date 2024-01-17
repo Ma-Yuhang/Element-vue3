@@ -1,0 +1,18 @@
+.h-icon {
+  --h-icon-color: inherit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  fill: currentColor;
+  color: var(--h-icon-color);
+  font-size: inherit;
+}
+
+@each $val in primary, info, success, warning, danger {
+  // 当你挂上 .h-icon--primary 类之后
+  // 你的 --h-icon-color 这个变量的值就会变成 var(--h-color-primary)
+  .h-icon--#{$val} {
+    --h-icon-color: var(--h-color-#{$val});
+  }
+}
