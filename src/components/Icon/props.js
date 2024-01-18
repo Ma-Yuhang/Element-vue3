@@ -5,8 +5,7 @@ export default {
     type: String,
     required: true
   },
-  // 大小
-  size: String,
+  color: String,
   // 旋转
   rotation: {
     type: [Number, String]
@@ -26,5 +25,6 @@ export default {
   'spin-pulse': Boolean,
   // 下面是自定义属性
   type: String,
-  color: String
+  // 大小
+  size: Number,
 }

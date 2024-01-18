@@ -20,7 +20,6 @@
 <style lang="scss" scoped>
 h1.title {
   text-align: center;
-  // margin-top: 5em;
   font-weight: 200;
 }
 
@@ -35,6 +34,6 @@ h1.title {
   margin-top: 2em;
 }
 .active {
-  border-bottom: 3px solid hsla(160, 100%, 37%, 1);
+  border-bottom: 3px solid var(--h-color-primary);
 }
 </style>
