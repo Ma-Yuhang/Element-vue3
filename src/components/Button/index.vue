@@ -1,16 +1,15 @@
 <template>
-  <button class="h-button" :class="classes">
-    <H-Icon
-      v-if="props.icon || props.loading"
-      class="h-icon"
-      :icon="props.icon || 'spinner'"
-      :spin="props.loading"
-    ></H-Icon>
-    <span><slot /></span>
+  <button ref="_ref" class="h-button" :class="classes" :disabled="disabled || loading">
+    <H-Icon v-if="loading" :icon="'spinner'" spin />
+    <H-Icon v-if="!loading && icon" :icon="icon" />
+    <span v-if="$slots.default">
+      <slot />
+    </span>
   </button>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { computed } from 'vue'
 import propsObj from './props'
 import { pick } from 'lodash-es'
@@ -18,6 +17,11 @@ defineOptions({
   name: 'H-Button'
 })
 const props = defineProps(propsObj)
+const _ref = ref(null)
+// 向外暴露出ref
+defineExpose({
+  ref: _ref
+})
 
 const classes = computed(() => {
   // 筛选出 plain round circle disabled
@@ -30,6 +34,9 @@ const classes = computed(() => {
   const isTypeArr = typeArr.map((type) => {
     return `is-${type}`
   })
+  if (props.loading) {
+    isTypeArr.push('is-disabled')
+  }
   // 选出type
   let type = props.type
   type && (type = `h-button--${type}`)
