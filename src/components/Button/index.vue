@@ -1,5 +1,10 @@
 <template>
-  <button ref="_ref" class="h-button" :class="classes" :disabled="disabled || loading">
+  <button
+    ref="_ref"
+    class="h-button"
+    :class="classes"
+    :disabled="disabled || loading"
+  >
     <H-Icon v-if="loading" :icon="'spinner'" spin />
     <H-Icon v-if="!loading && icon" :icon="icon" />
     <span v-if="$slots.default">

@@ -1,6 +1,6 @@
 export default {
   type: {
-    type: String,
+    type: String
     // default: 'default'
   },
   plain: {

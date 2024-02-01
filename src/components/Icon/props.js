@@ -26,5 +26,5 @@ export default {
   // 下面是自定义属性
   type: String,
   // 大小
-  size: Number,
+  size: Number
 }
