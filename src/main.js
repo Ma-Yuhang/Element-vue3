@@ -18,7 +18,8 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 library.add(fas)
 
 const app = createApp(App)
-
+// console.log('MODE', import.meta.env.MODE);
+// console.log('BASE_URL', import.meta.env.VITE_SOME_KEY);
 /* add font awesome icon component */
 app.component('font-awesome-icon', FontAwesomeIcon)
 

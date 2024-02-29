@@ -15,7 +15,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+// console.log('MODE', import.meta.env.MODE);
+// console.log('VITE_SOME_KEY', import.meta.env.VITE_SOME_KEY);
+</script>
 
 <style lang="scss" scoped>
 h1.title {
