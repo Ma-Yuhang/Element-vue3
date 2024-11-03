@@ -3,50 +3,50 @@
     <h1 class="row-title">设置类型</h1>
     <h3 class="row-title">使用 type、plain、round、circle、icon、disabled 和 size 来定义按钮的样式</h3>
     <div class="row">
-      <H-Button>Default</H-Button>
-      <H-Button type="primary">Primary</H-Button>
-      <H-Button type="success">Primary</H-Button>
-      <H-Button type="warning">Warning</H-Button>
-      <H-Button type="danger">Danger</H-Button>
-      <H-Button type="info">Info</H-Button>
+      <HButton>Default</HButton>
+      <HButton type="primary">Primary</HButton>
+      <HButton type="success">Primary</HButton>
+      <HButton type="warning">Warning</HButton>
+      <HButton type="danger">Danger</HButton>
+      <HButton type="info">Info</HButton>
     </div>
     <div class="row">
-      <H-Button plain>Plain</H-Button>
-      <H-Button type="primary" plain>Primary</H-Button>
-      <H-Button type="success" plain>Success</H-Button>
-      <H-Button type="warning" plain>Warning</H-Button>
-      <H-Button type="danger" plain>Danger</H-Button>
-      <H-Button type="info" plain>Info</H-Button>
+      <HButton plain>Plain</HButton>
+      <HButton type="primary" plain>Primary</HButton>
+      <HButton type="success" plain>Success</HButton>
+      <HButton type="warning" plain>Warning</HButton>
+      <HButton type="danger" plain>Danger</HButton>
+      <HButton type="info" plain>Info</HButton>
     </div>
     <div class="row">
-      <H-Button round>Default</H-Button>
-      <H-Button type="primary" round>Primary</H-Button>
-      <H-Button type="success" round>Success</H-Button>
-      <H-Button type="warning" round>Warning</H-Button>
-      <H-Button type="danger" round>Danger</H-Button>
-      <H-Button type="info" round>Info</H-Button>
+      <HButton round>Default</HButton>
+      <HButton type="primary" round>Primary</HButton>
+      <HButton type="success" round>Success</HButton>
+      <HButton type="warning" round>Warning</HButton>
+      <HButton type="danger" round>Danger</HButton>
+      <HButton type="info" round>Info</HButton>
     </div>
     <div class="row">
-      <H-Button disabled>Default</H-Button>
-      <H-Button type="primary" disabled>Primary</H-Button>
-      <H-Button type="success" disabled>Success</H-Button>
-      <H-Button type="warning" disabled>Warning</H-Button>
-      <H-Button type="danger" disabled>Danger</H-Button>
-      <H-Button type="info" disabled>Info</H-Button>
+      <HButton disabled>Default</HButton>
+      <HButton type="primary" disabled>Primary</HButton>
+      <HButton type="success" disabled>Success</HButton>
+      <HButton type="warning" disabled>Warning</HButton>
+      <HButton type="danger" disabled>Danger</HButton>
+      <HButton type="info" disabled>Info</HButton>
     </div>
     <div class="row">
-      <H-Button circle>
-        <H-Icon icon="user"></H-Icon>
-      </H-Button>
-      <H-Button circle icon="user"></H-Button>
-      <H-Button type="primary" loading icon="user">Loading</H-Button>
-      <H-Button type="success">
+      <HButton circle>
+        <HIcon icon="user"></HIcon>
+      </HButton>
+      <HButton circle icon="user"></HButton>
+      <HButton type="primary" loading icon="user">Loading</HButton>
+      <HButton type="success">
         Loading
-        <H-Icon icon="spinner" spin></H-Icon>
-      </H-Button>
-      <H-Button type="warning" size="small">Small</H-Button>
-      <H-Button type="danger" size="large">Large</H-Button>
-      <H-Button type="info" icon="user" circle ref="btnRef" @click="handleClick"></H-Button>
+        <HIcon icon="spinner" spin></HIcon>
+      </HButton>
+      <HButton type="warning" size="small">Small</HButton>
+      <HButton type="danger" size="large">Large</HButton>
+      <HButton type="info" icon="user" circle ref="btnRef" @click="handleClick"></HButton>
     </div>
   </div>
 </template>

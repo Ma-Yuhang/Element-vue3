@@ -9,7 +9,7 @@ import { computed } from 'vue'
 import { omit } from 'lodash-es'
 import propsObj from './props'
 defineOptions({
-  name: 'H-Icon'
+  name: 'HIcon'
 })
 // 接收props
 const props = defineProps(propsObj)

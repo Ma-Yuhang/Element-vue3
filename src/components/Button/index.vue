@@ -5,8 +5,8 @@
     :class="classes"
     :disabled="disabled || loading"
   >
-    <H-Icon v-if="loading" :icon="'spinner'" spin />
-    <H-Icon v-if="!loading && icon" :icon="icon" />
+    <HIcon v-if="loading" :icon="'spinner'" spin />
+    <HIcon v-if="!loading && icon" :icon="icon" />
     <span v-if="$slots.default">
       <slot />
     </span>
@@ -19,7 +19,7 @@ import { computed } from 'vue'
 import propsObj from './props'
 import { pick } from 'lodash-es'
 defineOptions({
-  name: 'H-Button'
+  name: 'HButton'
 })
 const props = defineProps(propsObj)
 const _ref = ref(null)

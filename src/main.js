@@ -23,7 +23,7 @@ const app = createApp(App)
 /* add font awesome icon component */
 app.component('font-awesome-icon', FontAwesomeIcon)
 
-app.component('H-Icon', Icon)
+app.component('HIcon', Icon)
 app.use(router)
 
 app.mount('#app')
